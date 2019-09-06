@@ -39,3 +39,5 @@ for($i = 0; $i < sizeof($users); $i++) {
 
 $myjson = json_encode($jsons);
 echo $myjson;
+
+file_put_contents ( 'export_wireshark_2.json' , $myjson);
